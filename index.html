@@ -5,13 +5,20 @@
         <link rel="icon" href="assets/favicon.png">
 
         <style>
+            @font-face {
+                font-family: "Cuprum";
+                src: url("assets/fonts/Cuprum.ttf");
+            }
+
             body {
+                margin: 0;
                 background-image: url("assets/background.jpg");
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 overflow-x: hidden;
+                font-family: "Cuprum", Arial, sans-serif;
             }
 
             body::after {
@@ -25,16 +32,19 @@
             }
 
             .logo-area {
-                padding-top: 0px;
+                padding-top: 0;
                 text-align: center;
             }
 
             .logo {
-                width: 400px;
+                width: min(400px, 90vw);
                 height: auto;
             }
 
             .navigation-buttons {
+                position: relative;
+                z-index: 10;
+
                 display: flex;
                 justify-content: center;
                 gap: 5px;
@@ -93,9 +103,11 @@
 
             .body-frame {
                 position: relative;
+                z-index: 1;
+
                 width: min(900px, 95vw);
                 aspect-ratio: 9 / 11;
-                margin: 20px auto;
+                margin: -80px auto 20px auto;
                 box-sizing: border-box;
 
                 background-image: url("assets/body-frame.png");
@@ -104,21 +116,26 @@
                 background-position: center;
 
                 color: black;
-                font-family: 
+                font-family: "Cuprum", Arial, sans-serif;
+            }
+
+            .welcome-title {
+                position: absolute;
+                top: 16%;
+                left: 50%;
+                transform: translateX(-50%);
+
+                width: 45%;
+                height: auto;
             }
 
             .body-text {
                 position: absolute;
-                top: 20%;
-                left: 20%;
-                right: 14%;
+                top: 25%;
+                left: 16%;
+                right: 18%;
                 bottom: 12%;
                 box-sizing: border-box;
-            }
-
-            .body-text h1 {
-                font-size: clamp(24px, 4vw, 40px);
-                margin-top: 0;
             }
 
             .body-text p {
@@ -140,11 +157,11 @@
             <a href="support.html" class="image-button support-button" aria-label="Support"></a>
         </div>
         <div class="body-frame">
+            <img src="assets/welcome-title.png" alt="Welcome!" class="welcome-title">
+            
             <div class="body-text">
-                <h1>Welcome</h1>
-
                 <p>
-                    This is where your page text will go.
+                    Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
                 </p>
             </div>
         </div>
