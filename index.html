@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Welcome to Liteblu Music!</title>
+        <link rel="icon" href="assets/favicon.png">
+
         <style>
             body {
                 background-image: url("assets/background.jpg");
@@ -8,6 +11,17 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
+                overflow-x: hidden;
+            }
+
+            body::after {
+                content:
+                    url("assets/home-button-hover.png")
+                    url("assets/music-button-hover.png")
+                    url("assets/video-button-hover.png")
+                    url("assets/contact-button-hover.png")
+                    url("assets/support-button-hover.png");
+                display: none;
             }
 
             .logo-area {
@@ -76,6 +90,41 @@
             .support-button:hover {
                 background-image: url("assets/support-button-hover.png");
             }
+
+            .body-frame {
+                position: relative;
+                width: min(900px, 95vw);
+                aspect-ratio: 9 / 11;
+                margin: 20px auto;
+                box-sizing: border-box;
+
+                background-image: url("assets/body-frame.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+
+                color: black;
+                font-family: 
+            }
+
+            .body-text {
+                position: absolute;
+                top: 20%;
+                left: 20%;
+                right: 14%;
+                bottom: 12%;
+                box-sizing: border-box;
+            }
+
+            .body-text h1 {
+                font-size: clamp(24px, 4vw, 40px);
+                margin-top: 0;
+            }
+
+            .body-text p {
+                font-size: clamp(14px, 2vw, 20px);
+                line-height: 1.4;
+            }
         </style>
     </head>
 
@@ -89,6 +138,15 @@
             <a href="videos.html" class="image-button video-button" aria-label="Videos"></a>
             <a href="contact.html" class="image-button contact-button" aria-label="Contact"></a>
             <a href="support.html" class="image-button support-button" aria-label="Support"></a>
+        </div>
+        <div class="body-frame">
+            <div class="body-text">
+                <h1>Welcome</h1>
+
+                <p>
+                    This is where your page text will go.
+                </p>
+            </div>
         </div>
     </body>
 </html>
