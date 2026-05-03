@@ -21,7 +21,60 @@
             }
 
             .navigation-buttons {
-                /* Nothing yet. */
+                display: flex;
+                justify-content: center;
+                gap: 5px;
+                flex-wrap: nowrap;
+                margin-top: 10px;
+            }
+
+            .image-button {
+                display: block;
+                width: 200px;
+                height: 100px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .home-button {
+                background-image: url("assets/home-button.png");
+            }
+
+            .home-button:hover {
+                background-image: url("assets/home-button-hover.png");
+            }
+
+            .music-button {
+                background-image: url("assets/music-button.png");
+            }
+
+            .music-button:hover {
+                background-image: url("assets/music-button-hover.png");
+            }
+
+            .video-button {
+                background-image: url("assets/video-button.png");
+            }
+
+            .video-button:hover {
+                background-image: url("assets/video-button-hover.png");
+            }
+
+            .contact-button {
+                background-image: url("assets/contact-button.png");
+            }
+
+            .contact-button:hover {
+                background-image: url("assets/contact-button-hover.png");
+            }
+
+            .support-button {
+                background-image: url("assets/support-button.png");
+            }
+
+            .support-button:hover {
+                background-image: url("assets/support-button-hover.png");
             }
         </style>
     </head>
@@ -31,7 +84,11 @@
             <img src="assets/logo.png" alt="Liteblu logo" class="logo">
         </div>
         <div class="navigation-buttons">
-            <!--Nothing yet.-->
+            <a href="index.html" class="image-button home-button" aria-label="Home"></a>
+            <a href="music.html" class="image-button music-button" aria-label="Music"></a>
+            <a href="videos.html" class="image-button video-button" aria-label="Videos"></a>
+            <a href="contact.html" class="image-button contact-button" aria-label="Contact"></a>
+            <a href="support.html" class="image-button support-button" aria-label="Support"></a>
         </div>
     </body>
 </html>
