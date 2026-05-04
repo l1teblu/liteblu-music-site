@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Music</title>
+        <link rel="icon" href="assets/favicon.png">
+
+        <style>
+            @font-face {
+                font-family: "Cuprum";
+                src: url("assets/fonts/Cuprum.ttf");
+            }
+
+            body {
+                margin: 0;
+                background-image: url("assets/background.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                overflow-x: hidden;
+                font-family: "Cuprum", Arial, sans-serif;
+            }
+
+            .logo-area {
+                padding-top: 0;
+                text-align: center;
+            }
+
+            .logo {
+                width: min(400px, 90vw);
+                height: auto;
+            }
+
+            .navigation-buttons {
+                position: relative;
+                z-index: 10;
+
+                display: flex;
+                justify-content: center;
+                gap: 5px;
+                flex-wrap: nowrap;
+                margin-top: 10px;
+            }
+
+            .image-button {
+                display: block;
+                width: 200px;
+                height: 100px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .home-button {
+                background-image: url("assets/home-button.png");
+            }
+
+            .home-button:hover {
+                background-image: url("assets/home-button-hover.png");
+            }
+
+            .music-button {
+                background-image: url("assets/music-button.png");
+            }
+
+            .music-button:hover {
+                background-image: url("assets/music-button-hover.png");
+            }
+
+            .video-button {
+                background-image: url("assets/video-button.png");
+            }
+
+            .video-button:hover {
+                background-image: url("assets/video-button-hover.png");
+            }
+
+            .contact-button {
+                background-image: url("assets/contact-button.png");
+            }
+
+            .contact-button:hover {
+                background-image: url("assets/contact-button-hover.png");
+            }
+
+            .support-button {
+                background-image: url("assets/support-button.png");
+            }
+
+            .support-button:hover {
+                background-image: url("assets/support-button-hover.png");
+            }
+
+            .body-frame {
+                position: relative;
+                z-index: 1;
+
+                width: min(900px, 95vw);
+                aspect-ratio: 9 / 11;
+                margin: -80px auto 20px auto;
+                box-sizing: border-box;
+
+                background-image: url("assets/body-frame.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+
+                color: black;
+                font-family: "Cuprum", Arial, sans-serif;
+            }
+
+            .body-text {
+                position: absolute;
+                top: 20%;
+                left: 16%;
+                right: 18%;
+                bottom: 12%;
+                box-sizing: border-box;
+            }
+
+            .body-text p {
+                font-size: clamp(18px, 3vw, 30px);
+                line-height: 1.35;
+            }
+
+            .preload-images {
+                position: absolute;
+                width: 0;
+                height: 0;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="preload-images">
+            <img src="assets/home-button-hover.png" alt="">
+            <img src="assets/music-button-hover.png" alt="">
+            <img src="assets/video-button-hover.png" alt="">
+            <img src="assets/contact-button-hover.png" alt="">
+            <img src="assets/support-button-hover.png" alt="">
+        </div>
+        <div class="logo-area">
+            <img src="assets/logo.png" alt="Liteblu logo" class="logo">
+        </div>
+        <div class="navigation-buttons">
+            <a href="index.html" class="image-button home-button" aria-label="Home"></a>
+            <a href="music.html" class="image-button music-button" aria-label="Music"></a>
+            <a href="videos.html" class="image-button video-button" aria-label="Videos"></a>
+            <a href="contact.html" class="image-button contact-button" aria-label="Contact"></a>
+            <a href="support.html" class="image-button support-button" aria-label="Support"></a>
+        </div>
+        <div class="body-frame">
+            <div class="body-text">
+                <p>
+                    Music updates will be posted here in the future.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
