@@ -21,16 +21,6 @@
                 font-family: "Cuprum", Arial, sans-serif;
             }
 
-            body::after {
-                content:
-                    url("assets/home-button-hover.png")
-                    url("assets/music-button-hover.png")
-                    url("assets/video-button-hover.png")
-                    url("assets/contact-button-hover.png")
-                    url("assets/support-button-hover.png");
-                display: none;
-            }
-
             .logo-area {
                 padding-top: 0;
                 text-align: center;
@@ -122,7 +112,7 @@
             .welcome-title {
                 position: absolute;
                 top: 16%;
-                left: 50%;
+                left: 48%;
                 transform: translateX(-50%);
 
                 width: 45%;
@@ -131,7 +121,7 @@
 
             .body-text {
                 position: absolute;
-                top: 25%;
+                top: 23.5%;
                 left: 16%;
                 right: 18%;
                 bottom: 12%;
@@ -139,13 +129,27 @@
             }
 
             .body-text p {
-                font-size: clamp(14px, 2vw, 20px);
-                line-height: 1.4;
+                font-size: clamp(18px, 3vw, 30px);
+                line-height: 1.35;
+            }
+
+            .preload-images {
+                position: absolute;
+                width: 0;
+                height: 0;
+                overflow: hidden;
             }
         </style>
     </head>
 
     <body>
+        <div class="preload-images">
+            <img src="assets/home-button-hover.png" alt="">
+            <img src="assets/music-button-hover.png" alt="">
+            <img src="assets/video-button-hover.png" alt="">
+            <img src="assets/contact-button-hover.png" alt="">
+            <img src="assets/support-button-hover.png" alt="">
+        </div>
         <div class="logo-area">
             <img src="assets/logo.png" alt="Liteblu logo" class="logo">
         </div>
@@ -161,7 +165,13 @@
             
             <div class="body-text">
                 <p>
-                    Hey there! I'm LiteBlu and welcome to my website. This will be the hub where all my creative progress will be. Although most of my content will be shown on YouTube, some of my other projects and ideas will be here for you to check out. Feel free to see all of the cool things I've worked on and plans I have for the future. If you need to reach me in any way, see the Contact page for ways to message me. LiteBlu out.
+                    Hey there! I'm LiteBlu and welcome to my website.
+                </p>
+                <p>
+                    This will be the hub where all my creative progress will be. Although most of my content will be shown on YouTube, some of my other projects and ideas will be here for you to check out. Feel free to see all of the cool things I've worked on and plans I have for the future. If you need to reach me in any way, see the Contact page for ways to message me.
+                </p>
+                <p>
+                    LiteBlu out.
                 </p>
             </div>
         </div>
