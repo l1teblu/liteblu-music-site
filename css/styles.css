@@ -1,11 +1,11 @@
             @font-face {
                 font-family: "Cuprum";
-                src: url("assets/fonts/Cuprum.ttf");
+                src: url("../assets/fonts/Cuprum.ttf");
             }
 
             body {
                 margin: 0;
-                background-image: url("assets/background.jpg");
+                background-image: url("../assets/background.jpg");
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -45,43 +45,43 @@
             }
 
             .home-button {
-                background-image: url("assets/home-button.png");
+                background-image: url("../assets/home-button.png");
             }
 
             .home-button:hover {
-                background-image: url("assets/home-button-hover.png");
+                background-image: url("../assets/home-button-hover.png");
             }
 
             .music-button {
-                background-image: url("assets/music-button.png");
+                background-image: url("../assets/music-button.png");
             }
 
             .music-button:hover {
-                background-image: url("assets/music-button-hover.png");
+                background-image: url("../assets/music-button-hover.png");
             }
 
             .video-button {
-                background-image: url("assets/video-button.png");
+                background-image: url("../assets/video-button.png");
             }
 
             .video-button:hover {
-                background-image: url("assets/video-button-hover.png");
+                background-image: url("../assets/video-button-hover.png");
             }
 
             .contact-button {
-                background-image: url("assets/contact-button.png");
+                background-image: url("../assets/contact-button.png");
             }
 
             .contact-button:hover {
-                background-image: url("assets/contact-button-hover.png");
+                background-image: url("../assets/contact-button-hover.png");
             }
 
             .support-button {
-                background-image: url("assets/support-button.png");
+                background-image: url("../assets/support-button.png");
             }
 
             .support-button:hover {
-                background-image: url("assets/support-button-hover.png");
+                background-image: url("../assets/support-button-hover.png");
             }
 
             .body-frame {
@@ -93,7 +93,7 @@
                 margin: -80px auto 20px auto;
                 box-sizing: border-box;
 
-                background-image: url("assets/body-frame.png");
+                background-image: url("../assets/body-frame.png");
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;
