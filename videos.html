@@ -4,6 +4,7 @@
         <title>My Videos</title>
         <link rel="icon" href="assets/favicon.png">
         <link rel="stylesheet" href="css/styles.css">
+        <script src="js/main.js" defer></script>
     </head>
 
     <body>
@@ -27,14 +28,32 @@
         <div class="body-frame">
             <div class="body-text">
                 <p>
-                    Video updates will be posted here in the future.
+                    I create YouTube videos for fun and to practice my video editing.
+                    Here's my latest video!
                 </p>
-                <div class="goober">
-                    <img src="assets/goober.png">
+                <div class="video-embed">
+                    <iframe
+                        src="https://youtube.com/embed/CTamnEBfY-A"
+                        title="Latest Liteblu video"
+                        loading="lazy"
+                        allowfullscreen>
+                    </iframe>
                 </div>
-                <p class="end-text">
-                    Goober for your troubles.
+                <div>
+                <p>
+                    Feel free to check out my videos at my channel.
                 </p>
+                <p class="stats">
+                    Current subscribers: <span id="subscriber-count">Loading...</span>
+                </p> 
+                </div>
+                <div class="youtube-channel-banner-button">
+                    <a href="https://youtube.com/@l1teblu" >
+                        <img 
+                            src="assets/youtube-button.png"
+                            alt="Visit my Youtube Channel!">
+                    </a>
+                </div>
             </div>
         </div>
     </body>
