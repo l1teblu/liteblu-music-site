@@ -145,3 +145,14 @@
             .links p {
                 font-size: clamp(14px, 2vw, 20px);
             }
+
+            .goober img {
+                width: 200px;
+                height: auto;
+                padding: 10% 10% 30% 30%;
+            }
+
+            .end-text {
+                text-align: center;
+                margin-top: -140px;
+            }
