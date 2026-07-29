@@ -112,15 +112,6 @@
                 height: auto;
             }
 
-            .welcome-body-text {
-                position: absolute;
-                top: 23.5%;
-                left: 16%;
-                right: 18%;
-                bottom: 12%;
-                box-sizing: border-box;
-            }
-
             .body-text p {
                 font-size: clamp(18px, 3vw, 30px);
                 line-height: 1.35;
@@ -140,6 +131,10 @@
                 right: 18%;
                 bottom: 12%;
                 box-sizing: border-box;
+            }
+
+            .welcome-body-text {
+                top: 23.5%;
             }
 
             .links p {
