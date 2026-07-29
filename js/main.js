@@ -11,7 +11,8 @@ async function loadSubscriberCount()
     if (!subscriberCountElement)
         return;
 
-    try {
+    try 
+    {
         const url      = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=${apiKey}`;
         const response = await fetch(url);
 
