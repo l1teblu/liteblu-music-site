@@ -126,7 +126,7 @@ body {
 
 .body-text {
     position: absolute;
-    top: 20%;
+    top: 17%;
     left: 18%;
     right: 18%;
     bottom: 12%;
@@ -180,4 +180,110 @@ body {
     color: #0091ff;
     font-size: clamp(18px, 3vw, 10px);
     line-height: 1;
+}
+
+.link-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+    margin: -70px 0px 0px -30px;
+}
+
+.social-button {
+    display: block;
+
+    width: min(150px, 16vw);
+    aspect-ratio: 1;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.youtube-button {
+    background-image: url("../assets/youtube1.png");
+}
+
+.youtube-button:hover {
+    background-image: url("../assets/youtube2.png");
+}
+
+.twitter-button {
+    background-image: url("../assets/twitter1.png");
+}
+
+.twitter-button:hover {
+    background-image: url("../assets/twitter2.png");
+}
+
+.soundcloud-button {
+    background-image: url("../assets/soundcloud1.png");
+}
+
+.soundcloud-button:hover {
+    background-image: url("../assets/soundcloud2.png");
+}
+
+.bandcamp-button {
+    background-image: url("../assets/bandcamp1.png");
+}
+
+.bandcamp-button:hover {
+    background-image: url("../assets/bandcamp2.png");
+}
+
+.newgrounds-button {
+    background-image: url("../assets/newgrounds1.png");
+}
+
+.newgrounds-button:hover {
+    background-image: url("../assets/newgrounds2.png");
+}
+
+.bluesky-button {
+    background-image: url("../assets/bluesky1.png");
+}
+
+.bluesky-button:hover {
+    background-image: url("../assets/bluesky2.png");
+}
+
+.patreon-button {
+    background-image: url("../assets/patreon1.png");
+}
+
+.patreon-button:hover {
+    background-image: url("../assets/patreon2.png");
+}
+
+.instagram-button {
+    background-image: url("../assets/instagram1.png");
+}
+
+.instagram-button:hover {
+    background-image: url("../assets/instagram2.png");
+}
+
+.tiktok-button {
+    background-image: url("../assets/tiktok1.png");
+}
+
+.tiktok-button:hover {
+    background-image: url("../assets/tiktok2.png");
+}
+
+.kofi-button {
+    background-image: url("../assets/kofi1.png");
+}
+
+.kofi-button:hover {
+    background-image: url("../assets/kofi2.png");
+}
+
+.itch-button {
+    background-image: url("../assets/itch1.png");
+}
+
+.itch-button:hover {
+    background-image: url("../assets/itch2.png");
 }
