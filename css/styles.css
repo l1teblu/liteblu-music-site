@@ -287,3 +287,46 @@ body {
 .itch-button:hover {
     background-image: url("../assets/itch2.png");
 }
+
+#physics-playground {
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 4 / 3;
+    margin: 0 auto;
+    overflow: hidden;
+
+    background-image: url(../assets/tank.png);
+    background-size: cover;
+    background-position: center;
+    border: 3px solid white;
+}
+
+#physics-playground canvas {
+    display: block;
+}
+
+.physics-playground {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    right: 18%;
+    bottom: 10%;
+    box-sizing: border-box;
+}
+
+.hidden-goober {
+    position: fixed;
+
+    left: 20px;
+    bottom: 20px;
+
+    width: 48px;
+    height: 48px;
+
+    background-image: url("../assets/goober.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: block;
+}
