@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Goober Tank</title>
+        <link rel="icon" href="assets/favicon.png">
+        <link rel="stylesheet" href="css/styles.css">
+        <script
+            src="https://cdn.jsdelivr.net/npm/matter-js@0.20.0/build/matter.min.js">
+        </script>
+        <script src="js/physics.js" defer></script>
+    </head>
+
+    <body>
+        <div class="preload-images">
+            <img src="assets/home-button-hover.png" alt="">
+            <img src="assets/music-button-hover.png" alt="">
+            <img src="assets/video-button-hover.png" alt="">
+            <img src="assets/contact-button-hover.png" alt="">
+            <img src="assets/support-button-hover.png" alt="">
+        </div>
+        <div class="logo-area">
+            <img src="assets/logo.png" alt="Liteblu logo" class="logo">
+        </div>
+        <div class="navigation-buttons">
+            <a href="index.html" class="image-button home-button" aria-label="Home"></a>
+            <a href="music.html" class="image-button music-button" aria-label="Music"></a>
+            <a href="videos.html" class="image-button video-button" aria-label="Videos"></a>
+            <a href="contact.html" class="image-button contact-button" aria-label="Contact"></a>
+            <a href="support.html" class="image-button support-button" aria-label="Support"></a>
+        </div>
+
+        <div class="body-frame">
+            <div class="body-text">
+                <p>Goober tank:<br>
+                Take care of the goober in his tank.</p>
+            </div>
+                <div class="physics-playground" id="physics-playground"></div>
+        </div>
+    </body>
+</html>
